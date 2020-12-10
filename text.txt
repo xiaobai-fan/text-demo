@@ -1,0 +1,134 @@
+npm i -S vuex -g
+npm i --save-dev sass-loader 
+npm i --save-dev node-sass
+
+build 文件夹的webpack.base.conf.js  里 module rules 配置
+{test:/\.scss$/,
+loader:['style','css','sass']
+}
+
+
+webpack-dev-server不是内部或外部命令
+
+ 参考：https://segmentfault.com/q/1010000006939078
+
+错误报告：webpack-dev-server不是内部或外部命令
+
+错误原因：
+
+当执行命令： npm run dev  实际执行的是 package.json 配置：
+
+"dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+相当于：npm run webpack-dev-server --inline --progress --config build/webpack.dev.conf.js
+ 
+可能原因：没有安装  webpack-dev-server 
+
+全局安装：npm install webpack-dev-server -g     （一般全局安装后就没问题）
+局部安装：npm install webpack-dev-server --save-dev
+
+
+
+
+
+C:\Users\lenovo\AppData\Roaming\npm\node_modules\@vue\cli
+
+Number
+String
+Boolean
+undefined
+null
+typeof
+parseint
+parsefloat
++ - * /  (算数运算符)
+% ++ --  （一元）
+&&  ||  ！（逻辑）
+< > =  >= <= == （比较）
++=   -= （赋值）
+
+document.querySeletor()
+querySeletorAll
+getElementsByClassName
+getElementsByTagName
+getElementsByName
+getElementById
+innerHTML
+innerText
+box.style.widht='500px'
+box.style='width:200px;height:200px'
+box.style.cssText='width:200px;height:200px'
+box.style.removeProperty('width')
+box.className='box box1' 
+box.classList.add('box','box1')
+box.classList.romove('box','box1')
+box.classList.toggle('box')
+box.classList.replace('box','box2')
+
+parentNode
+parentElement
+
+childNode
+children
+
+firstChild
+firstElementChild
+
+lastChild
+lastElementChild
+
+perviousSibling
+perviousElementSibling
+
+nextSibling
+nextElementSibling
+
+var box1 = document.createElement('div')
+box.appendChild(box1)
+box.insertBefore(box2,box3)
+box.replace(box4,box2)
+box.remove()
+
+var fragment = document.createDocumentFragment();
+fragment.appendChild(box1,box2)
+box.appendChild(fragment)
+
+if else
+switch (){ case  :   default:}  continue break
+for while  
+
+乘法口诀  冒泡排序
+
+function abc() {}
+var fn = function ( arguments){}
+作用域  返回值  封装
+递归  闭包 this call apply bind   箭头函数
+
+var arr = [1,2]
+forEach((item,index,array)=>{
+})
+map()
+push()
+pop()
+shift()
+unshift()
+
+sort((a,b)=>{return a-b})
+slice(1,3)  
+concat(arr3)
+
+var =some =JSON.Stingify(obj)
+JSON.parse(some)
+
+splice(1,2,2,3)
+
+
+
+
+
+
+
+
+
+
+
+
